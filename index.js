@@ -100,4 +100,24 @@ client.on('chat', (channel, user, message, self) => {
         
     }
 
+    if(message === '!schmove') {
+
+        y = Math.floor((Math.random()));
+        console.log(y)
+
+        if(y >= 0.80){
+    
+            client.say(currentChannel, `${user['display-name']} is ready for the schmovement! Pog`)
+
+        }
+        
+        else{
+
+            client.say(currentChannel, `${user['display-name']} was not ready to handle the schmovement lffnHands`)
+            client.timeout(currentChannel, `${user['display-name']}`, 300, "Schmovement");
+
+        }
+
+    }
+
 });
