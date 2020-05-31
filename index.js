@@ -114,7 +114,7 @@ client.on('chat', (channel, user, message, self) => {
         else{
 
             client.say(currentChannel, `${user['display-name']} was not ready to handle the schmovement lffnHands`)
-            client.timeout(currentChannel, `${user['display-name']}`, 300, "Schmovement");
+            client.timeout(currentChannel, `${user['display-name']}`, 60, "Schmovement");
 
         }
 
